@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
+@import "variables";
+
+
+.flash-message {
+	margin-bottom: 0;
+}
+
+.alert {
+	color: #fff;
+	border-radius: 0;
+	font-weight: bold;
+	margin-top: -20px;
+	margin-bottom: 20px;
+
+	&--Info {
+		background: #33b5e5;
+	}
+
+	&--Success {
+		background: #00C851;
+	}
+
+	&--Warning {
+		background: #ffbb33;
+	}
+
+	&--Error {
+		background: #ff4444;
+	}
+}
+
+.card {
+	.card-header {
+		background: white;
+	}
+}
+
+.container-full-height {
+	height: calc(100vh - 60px);
+}
+
+.fa.fa-check {
+	color: #00C851;
+}
+
+.btn:focus,
+.form-control:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	border: 1px solid #007bff !important;
+}
+
+table thead th {
+	border-bottom: 0 !important;
+}
+
+
+.players-table {
+	tbody tr {
+		border: 1px solid rgba(0, 0, 0, 0.125) !important;
+	}
+
+	tbody td {
+		border: 0 !important;
+
+		&:nth-child(odd) {
+			border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
+		}
+	}
+}
